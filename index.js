@@ -10,8 +10,6 @@ app.use(express.json())
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vybtxro.mongodb.net/?appName=Cluster0`;
 
-// const uri = "mongodb+srv://smartDBuser:1LB90oFxDvvi0oTa@cluster0.vybtxro.mongodb.net/?appName=Cluster0";
-
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
